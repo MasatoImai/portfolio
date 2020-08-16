@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ff8d3ab8b8.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>portfolio</h1>
+    <ul>
+      <li class="list1"><a href="#about">SKILL</a></li>
+      <li class="list2"><a href="#main">WORKS</a></li>
+      <li class="list3"><a href="#prof">PROF</a></li>
+    </ul>
+  </header>
+
+  <i class="fas fa-bars fa-2x" id="menu_btn"></i>
+    <nav>
+      <ul>
+        <li><a href="#about">SKILL</a></li>
+        <li><a href="#main">WORKS</a></li>
+        <li><a href="#prof">PROF</a></li>
+      </ul>
+    </nav>
+  
+    <h1 id="about">SKILL</h1>
+  <section class="container">
+      <ul class="skill">
+        <li>HTML ★★★☆☆</li>
+        <li>CSS  ★★★☆☆</li>
+        <li>Bootstrap ★★★☆☆</li>
+        <li>jQuery ★★☆☆☆</li>
+        <li>Javascript ★★☆☆☆</li>
+        <li>Wordpress ★★☆☆☆</li>
+        <li>PHP ★☆☆☆☆</li>
+      </ul>
+  </section>
+
+  <h1 id="main">WORKS</h1>
+    NONE (～2020.7)
+    
+
+  <h1 id="#prof">PROF</h1>
+    <p>NAME:MasatoImai</p>
+    <p>AGE:31</p>
+    <p>FROM:Gifu</p>
+    <p>ADRESS:Hokkaido</p>
+    <p>COMMENT:今井と申します。2020年4月よりプログラミングの学習を開始しました。まだ駆け出しではありますが、エンジニアとして活動しております。ご興味があればまずはご相談ください。よろしくお願いします。</h2>
+    <br><a class="top-retern"href="#">TOP</a>
+  <footer>&copy;MasatoImai portfolio 2020</footer>
+  
+
+
+  <script>
+    $(function() {
+
+      $("nav").hide(0);
+      $("#menu_btn").click(function() {
+        $(this).next().slideToggle();
+      });
+
+    });
+
+
+  </script>
+</body>
+</html>
